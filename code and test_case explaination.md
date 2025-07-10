@@ -43,7 +43,7 @@ PLATOON_CLASSES = {
 
 ---
 
-## 🔷 Platoon Class
+## Platoon Class
 
 ```python
 class Platoon:
