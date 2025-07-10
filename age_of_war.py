@@ -73,7 +73,7 @@ def get_army_input(label, container):
 
     non_zero = [p for p in all_platoons if p.soldiers > 0]
     if len(non_zero) < 5:
-        container.warning("⚠️ Please assign non-zero soldiers to at least 5 platoon types.")
+        container.warning("Please assign non-zero soldiers to at least 5 platoon types.")
         return None
     return sorted(non_zero, key=lambda x: -x.soldiers)[:5]
 
@@ -103,7 +103,7 @@ if submitted and your_army and enemy_army:
     winning_army = find_winning_arrangement(your_army, enemy_obj)
 
     if winning_army:
-        st.success("✅ Winning arrangement found:")
+        st.success("Winning arrangement found:")
         st.code(str(winning_army))
 
         st.markdown("### ⚔️ Simulating Battle...")
