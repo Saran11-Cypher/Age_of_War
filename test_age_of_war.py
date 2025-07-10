@@ -66,7 +66,7 @@ class TestAgeOfWar(unittest.TestCase):
 
 # Run and generate HTML report
 if __name__ == '__main__':
-    output_path = r"E:\PYTHON\Django\Workspace\Macro_Generator\test_reports"
+    output_path = r"(give the desired path as you choose to save)"
     os.makedirs(output_path, exist_ok=True)
 
     unittest.main(
